@@ -17,7 +17,7 @@ print ("Total paid: " + str(Totalpaid))
 print ("Remaining balance: " + str(balance))
 
 
-'''
+"""
 test
 
 balance = 5000    #say you have a credit card balance of $5K
@@ -107,4 +107,4 @@ Mininum monthly payment: 148.26
 Remaining balance: 3617.63
 Total paid: 2040.63
 Remaining balance: 3617.63
-'''
+"""
