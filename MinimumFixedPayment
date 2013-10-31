@@ -1,0 +1,53 @@
+
+'''
+Now write a program that calculates the minimum fixed monthly payment needed in 
+order pay off a credit card balance within 12 months (1 year).
+'''
+
+#balance = 3926
+#annualInterestRate = 0.2
+
+initialBalance = balance
+minPayment = 0.00
+monthlyInterestRate = (annualInterestRate)/12.0
+
+while balance > 0:
+    balance = initialBalance
+    minPayment = minPayment + 10.00
+    for month in range(1, 13):
+        monthlyUnpaidBalance = balance - minPayment
+        balance = monthlyUnpaidBalance + monthlyInterestRate*monthlyUnpaidBalance
+    if balance > 0:
+    else:
+        break
+print ("Lowest Payment: " + str(int(minPayment)))
+
+
+'''
+test cases:
+
+
+balance = 3329            #Say you have a debt of $3329
+annualInterestRate = 0.2  #Credit card company charges 20% annual interest on the balance
+
+Lowest Payment: 310       #This is the amount you need to pay every month for 1 year to pay off the balance
+
+
+
+
+balance = 4773
+annualInterestRate = 0.2
+
+Lowest Payment: 440
+
+
+
+
+balance = 3926
+annualInterestRate = 0.2
+
+Lowest Payment: 360
+
+
+
+'''
