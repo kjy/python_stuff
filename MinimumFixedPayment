@@ -1,4 +1,3 @@
-
 '''
 Now write a program that calculates the minimum fixed monthly payment needed in 
 order pay off a credit card balance within 12 months (1 year).
@@ -18,6 +17,7 @@ while balance > 0:
         monthlyUnpaidBalance = balance - minPayment
         balance = monthlyUnpaidBalance + monthlyInterestRate*monthlyUnpaidBalance
     if balance > 0:
+        pass
     else:
         break
 print ("Lowest Payment: " + str(int(minPayment)))
