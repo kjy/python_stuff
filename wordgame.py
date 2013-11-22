@@ -1,4 +1,3 @@
-
 # 6.00x Problem Set 4A Template
 #
 # The 6.00 Word Game
