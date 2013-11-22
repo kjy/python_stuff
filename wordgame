@@ -1,5 +1,4 @@
 
-
 # 6.00x Problem Set 4A Template
 #
 # The 6.00 Word Game
@@ -316,3 +315,53 @@ def playGame(wordList):
 if __name__ == '__main__':
     wordList = loadWords()
     playGame(wordList)
+    
+ """   
+ test:
+ Enter n to deal a new hand, r to replay the last hand, or e to end game: n
+Current Hand:  a a j l t w x
+
+Enter word, or a '.' to indicate that you are finished: tax
+"tax" earned 30 points. Total: 30 points
+
+Current Hand:  a w j l
+
+Enter word, or a '.' to indicate that you are finished: jaw
+"jaw" earned 39 points. Total: 69 points
+
+Current Hand:  l
+
+Enter word, or a '.' to indicate that you are finished: l
+Invalid word, please try again.
+
+Current Hand:  l
+
+Enter word, or a '.' to indicate that you are finished: .
+Goodbye! Total score: 69 points.
+
+Enter n to deal a new hand, r to replay the last hand, or e to end game: r
+Current Hand:  a a j l t w x
+
+Enter word, or a '.' to indicate that you are finished: lax
+"lax" earned 30 points. Total: 30 points
+
+Current Hand:  a t w j
+
+Enter word, or a '.' to indicate that you are finished: .
+Goodbye! Total score: 30 points.
+
+Enter n to deal a new hand, r to replay the last hand, or e to end game: n
+Current Hand:  j l o u y x x
+
+Enter word, or a '.' to indicate that you are finished: you
+"you" earned 18 points. Total: 18 points
+
+Current Hand:  x x j l
+
+Enter word, or a '.' to indicate that you are finished: .
+Goodbye! Total score: 18 points.
+
+Enter n to deal a new hand, r to replay the last hand, or e to end game: e
+
+"""
+ 
