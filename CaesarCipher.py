@@ -205,9 +205,29 @@ def decryptStory():
 
 if __name__ == '__main__':
     # To test findBestShift:
+
+
     wordList = loadWords()
     s = applyShift('Hello, world!', 8)
     bestShift = findBestShift(wordList, s)
     assert applyShift(s, bestShift) == 'Hello, world!'
     # To test decryptStory, comment the above four lines and uncomment this line:
     #    decryptStory()
+    
+    """
+    test
+    
+    >>> decryptStory()
+Loading word list from file...
+   55909 words loaded.
+Tkmu Pvyboi sc k widrsmkv mrkbkmdob mbokdon yx dro czeb yp k wywoxd dy rovz myfob kx sxceppsmsoxdvi zvkxxon rkmu. 
+Ro rkc loox boqscdobon pyb mvkccoc kd WSD dgsmo lopybo, led rkc bozybdonvi xofob zkccon k mvkcc. 
+Sd rkc loox dro dbknsdsyx yp dro bocsnoxdc yp Okcd Mkwzec dy lomywo Tkmu Pvyboi pyb k pog xsqrdc okmr iokb 
+dy onemkdo sxmywsxq cdenoxdc sx dro gkic, wokxc, kxn odrsmc yp rkmusxq.
+
+'Jack Florey is a mythical character created on the spur of a moment to help cover an insufficiently planned hack. 
+He has been registered for classes at MIT twice before, but has reportedly never passed a class. 
+It has been the tradition of the residents of East Campus to become Jack Florey for a few nights each year
+to educate incoming students in the ways, means, and ethics of hacking.\n'
+"""
+
